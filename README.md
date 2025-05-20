@@ -59,7 +59,7 @@ Each week follows a "Learn + Build + Share" model:
 
 ## 💬 Feedback or Collaboration?
 Feel free to open issues, comment, or connect with me on:
-- 🌐 [LinkedIn]([https://www.linkedin.com/in/samuel-oshin-2903611a5/]
+- 🌐 [LinkedIn](https://www.linkedin.com/in/samuel-oshin-2903611a5/)
 - 📬 [Email](mailto:samuelt.oshin@gmail.com@gmail.com)
 
 Let's build smarter together. 💡
