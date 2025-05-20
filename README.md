@@ -8,7 +8,7 @@ This repo documents my weekly progress, projects, and reflections as I learn how
 
 ## 🗂️ Quick Links
 
-- 📅 [Public Notion Dashboard (Curriculum Tracker)](https://your-notion-link-here)
+- 📅 [Public Notion Dashboard (Curriculum Tracker)](#)
 - 📚 [Official GenAI Project List PDF](./GenAI_Pinnacle_Plus_Projects.pdf)
 - 🧩 [Project Summaries](#-projects)
 - 💡 [Weekly Curriculum](#-weekly-curriculum)
@@ -59,8 +59,8 @@ Each week follows a "Learn + Build + Share" model:
 
 ## 💬 Feedback or Collaboration?
 Feel free to open issues, comment, or connect with me on:
-- 🌐 [LinkedIn](https://www.linkedin.com/in/samueloshin)
-- 📬 [Email](mailto:samueloshin.dev@gmail.com)
+- 🌐 [LinkedIn]([https://www.linkedin.com/in/samuel-oshin-2903611a5/]
+- 📬 [Email](mailto:samuelt.oshin@gmail.com@gmail.com)
 
 Let's build smarter together. 💡
 
