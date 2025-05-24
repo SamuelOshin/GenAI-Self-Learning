@@ -39,7 +39,17 @@ An AI-powered resume reviewer that provides comprehensive feedback, suggestions,
    ```powershell
    pip install -r requirements.txt
    ```
+    **Create a virtual environment**
+      ```powershell
+      python -m venv venv
+      .\venv\Scripts\activate
+      ```
 
+      If you're using macOS or Linux:
+      ```bash
+      python3 -m venv venv
+      source venv/bin/activate
+      ```
 3. **Set up environment variables**
    Copy the example environment file and configure it:
    ```powershell
@@ -86,7 +96,7 @@ streamlit run streamlit_app.py
 #### Option 2: FastAPI Backend + Frontend
 ```powershell
 # Terminal 1 - Start the API server
-uvicorn main:app --reload
+python main.py
 
 # Terminal 2 - Start the Streamlit frontend
 streamlit run streamlit_app.py
