@@ -56,6 +56,22 @@ An AI-powered resume reviewer that provides comprehensive feedback, suggestions,
    ANTHROPIC_MAX_TOKENS=4000
    ```
 
+### Exporting Feedback as DOCX
+
+You can now export your AI-generated resume feedback as a professionally formatted DOCX file directly from the Streamlit interface:
+
+- After uploading your resume and receiving feedback, click the **"📄 Export Feedback as DOCX"** button.
+- The exported document includes only the AI's responses, with clear section headings and bullet points for easy reading and direct use.
+- Headings and bullet points are automatically detected and formatted for a clean, professional look.
+
+**Example workflow:**
+1. Upload your resume (PDF, DOCX, or TXT)
+2. Click **Get Initial Review**
+3. (Optional) Chat with the AI for follow-up questions or rewrite suggestions
+4. Click **📄 Export Feedback as DOCX** to download your feedback report
+
+The exported file is ready for sharing or further editing in Microsoft Word or Google Docs.
+
 ### Running the Application
 
 #### Option 1: Streamlit Web Interface (Recommended)
