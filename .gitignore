@@ -24,7 +24,6 @@ var/
 .ipynb_checkpoints
 
 # VS Code
-.vscode/
 *.code-workspace
 
 # Environment variables
@@ -85,3 +84,4 @@ wheels/
 faiss_index/
 lora_output/
 lora_finetuned_model/
+.gitignore

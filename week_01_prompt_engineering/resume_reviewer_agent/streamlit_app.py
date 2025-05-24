@@ -219,15 +219,20 @@ if "initial_feedback" in st.session_state:
             response_placeholder = st.empty()
             streamed_text = ""
             from app import get_feedback_via_api_streaming
-            for partial in get_feedback_via_api_streaming(
-                st.session_state["resume_text"],
-                st.session_state.get("job_title"),
-                enhanced_messages
-            ):
-                streamed_text = partial
-                response_placeholder.markdown(streamed_text)
-            st.session_state["messages"].append({"role": "assistant", "content": streamed_text})
-            st.chat_message("assistant").write(streamed_text)    # --- Export Feedback ---
+            try:
+                for partial in get_feedback_via_api_streaming(
+                    st.session_state["resume_text"],
+                    st.session_state.get("job_title"),
+                    enhanced_messages
+                ):
+                    streamed_text += partial  
+                    response_placeholder.markdown(streamed_text)
+                st.session_state["messages"].append({"role": "assistant", "content": streamed_text})
+                st.chat_message("assistant").write(streamed_text)
+            except Exception as e:
+                st.error(f"❌ Streaming failed: {str(e)}. Please check your Anthropic API key and network connection.")
+
+    # --- Export Feedback ---
     st.markdown("---")
     if st.button("📄 Export Feedback as DOCX", use_container_width=True):
         try:

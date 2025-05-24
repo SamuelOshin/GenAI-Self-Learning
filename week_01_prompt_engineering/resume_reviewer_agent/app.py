@@ -133,8 +133,8 @@ def get_feedback_via_api_streaming(resume_text, job_title=None, messages=None):
             conversation = []
         
         # Add system context if not already present
-        system_prompt = """You are a professional resume reviewer and writer with 15+ years of experience. 
-        Provide specific, actionable feedback that helps candidates pass ATS screening and impress recruiters.
+        system_prompt = """You are a professional resume reviewer and writer with 15+ years of experience. \
+        Provide specific, actionable feedback that helps candidates pass ATS screening and impress recruiters.\
         Focus on concrete improvements rather than generic advice."""
         
         if job_title:
@@ -148,8 +148,6 @@ def get_feedback_via_api_streaming(resume_text, job_title=None, messages=None):
                 "role": "user", 
                 "content": "Please provide a comprehensive resume analysis with specific improvement suggestions."
             })
-          # Stream the response
-        partial_response = ""
         with client.messages.stream(
             model=ANTHROPIC_MODEL,
             max_tokens=ANTHROPIC_MAX_TOKENS,
@@ -157,9 +155,7 @@ def get_feedback_via_api_streaming(resume_text, job_title=None, messages=None):
             messages=conversation
         ) as stream:
             for chunk in stream.text_stream:
-                partial_response += chunk
-                yield partial_response
-                
+                yield chunk 
     except Exception as e:
         yield f"[Error] Unable to connect to AI service: {str(e)}"
 
