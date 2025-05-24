@@ -1,0 +1,24 @@
+# Resume Reviewer Agent Dependencies
+
+# Core packages
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# LLM and AI
+anthropic>=0.7.0
+langchain>=0.0.267
+langchain-anthropic>=0.1.0
+
+# Document parsing
+pypdf>=3.15.1
+PyPDF2>=3.0.1
+python-docx>=0.8.11
+pdfminer.six>=20221105
+
+# Web interface
+streamlit>=1.28.0
+
+# Utilities
+requests>=2.31.0
+tqdm>=4.66.0
+uvicorn>=0.20.0

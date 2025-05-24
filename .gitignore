@@ -38,6 +38,7 @@ var/
 venv/
 env/
 ENV/
+.venv_resume_reviewer/
 
 # Distribution / packaging
 .Python
